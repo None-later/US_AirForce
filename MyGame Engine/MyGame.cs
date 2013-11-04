@@ -29,8 +29,8 @@ namespace TheGame
 {
     public class Spillet: Engine_Game
     {
-        public static Engine_Sprite Hero;
-        public static ufo UFO;
+        public static Hero Hero_plane;
+        public static BadGuy UFO;
 
         public Spillet()
         {
@@ -100,11 +100,11 @@ namespace TheGame
             PlaneAnimation.Add(afPlane6);
             PlaneAnimation.Play();
             PlaneAnimation.Loop = true;
-            Engine_Sprite Plane = new Engine_Sprite();
+            Hero Plane = new Hero();
             Plane.Add(PlaneAnimation);
             Plane.Position = new Point((800-16)/2, 550);
             Engine_Game.Add(Plane);
-            Hero = Plane;
+            Hero_plane = Plane;
 
       
             #endregion
@@ -148,7 +148,7 @@ namespace TheGame
             UFOExplosion.Add(afUFOExplosion02);
             UFOExplosion.Add(afUFOExplosion03);
             UFOExplosion.Play();
-            ufo ufo = new ufo();
+            BadGuy ufo = new BadGuy();
             ufo.Add(UFOAnimation);
             ufo.Add(UFOExplosion);
             UFO = ufo;
@@ -161,6 +161,10 @@ namespace TheGame
       m_GameLoops++;
       if (m_GameLoops % 200 == 0)
       {
+          BadGuy EnemyUFO = (BadGuy)UFO.Clone();
+          EnemyUFO.Position = new Point(m_Random.Next(-100, 800), -150);
+          Engine_Game.Add(EnemyUFO);
+
       }
     }
 

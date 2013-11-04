@@ -36,6 +36,13 @@ namespace TheGame
 
         public override void Update()
         {
+            Hero H = Spillet.Hero_plane;
+            Vector2 v = new Vector2(H.Position.X - Position.X, H.Position.Y - Position.Y);
+            v.Normalize();
+            Velocity = v;
+
+
+            
             //Bruk CollisionWithHero og CollisionScore her i stede for 
             //m_Score og CollideSprites
         }

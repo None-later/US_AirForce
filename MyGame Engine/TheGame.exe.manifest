@@ -4,7 +4,7 @@
   <description asmv2:iconFile="mygame.ICO" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="TheGame" version="1.0.5056.34234" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="TheGame" version="1.0.5056.36141" language="neutral" processorArchitecture="x86" />
     <commandLine file="TheGame.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -94,13 +94,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TheGame.exe" size="31232">
-      <assemblyIdentity name="TheGame" version="1.0.5056.34234" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="TheGame" version="1.0.5056.36141" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bbPkLSeussfIehFUS28Y+9ZzrTs=</dsig:DigestValue>
+        <dsig:DigestValue>oUTxBKPKg6lXdj5ILI+gaLP67A4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
