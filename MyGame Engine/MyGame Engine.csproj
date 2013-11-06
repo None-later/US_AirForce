@@ -8,9 +8,9 @@
     <ProjectGuid>{138C4746-67DE-4A16-8412-5225F609B537}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TheGame</RootNamespace>
-    <AssemblyName>TheGame</AssemblyName>
+    <AssemblyName>US AirForce</AssemblyName>
     <WarningLevel>4</WarningLevel>
-    <ApplicationIcon>mygame.ICO</ApplicationIcon>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -57,11 +57,12 @@
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
     <StartupObject>TheGame.Engine_Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
@@ -142,6 +143,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Game.ico" />
     <Content Include="mygame.ICO" />
   </ItemGroup>
   <ItemGroup>

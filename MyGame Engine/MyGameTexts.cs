@@ -13,8 +13,9 @@ namespace TheGame
     {
         public FrameRate(Engine_Font font): base(font)
         {
-            Position = new Point(570, 0);
-            Color = Color.DarkCyan;
+            Position = new Point(700, 0);
+            Color = Color.DarkGreen;
+            Visible = false;
         }
         public override void Update()
         {
